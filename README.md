@@ -14,7 +14,7 @@ Add actions via their event handlers,
 var appActions = require('../actions/appActions');
   addItem: function() {
     appActions.addItem(item);
-  }
+}
 ```
   
 #Actions
@@ -60,7 +60,7 @@ var appStore = assign(EventEmitter.prototype, {
 }
 ```
 
-#Components/Views
+#Components/Views (again)
 Listen for any event changes and update state accordingly
 ```
 componentWillMount:function(){
