@@ -1,4 +1,16 @@
 var React = require('react');
-var SUBCOMPONENT = require('./components/subComponent');
+var Items = require('./components/items');
+var Controls = require('./components/itemControls');
 
-React.render(<SUBCOMPONENT/>, document.body);
+var App = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <Controls/>
+        <Items/>
+      </div>
+    );
+  }
+});
+
+React.render(<App/>, document.body);
