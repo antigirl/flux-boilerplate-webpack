@@ -28,8 +28,8 @@ var appDispatcher = require('../dispatcher/appDispatcher');
 ```
 
 #Dispatcher
-```
 Just an instance of a ronery dispatcher 
+```
 var Dispatcher = require('flux').Dispatcher;
 module.exports = new Dispatcher();
 ```
