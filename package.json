@@ -2,16 +2,25 @@
   "name": "flux-boilerplate-npm",
   "version": "1.0.0",
   "description": "boilerplate with just npm",
-  "main": "index.js",
+  "main": "js/app.jsx",
   "dependencies": {
-    "react": "^0.13.3"
-  },
-  "devDependencies": {
     "browserify": "^10.2.4",
+    "node-libs-browser": "^0.5.2",
     "reactify": "^1.1.1",
+    "react": "^0.13.3",
+    "webpack": "^1.9.11",
     "watchify": "^3.2.2"
   },
+  "devDependencies": {
+    "file-loader": "^0.8.4",
+    "jsx-loader": "^0.13.2",
+    "react-hot-loader": "^1.2.7",
+    "webpack": "^1.9.11",
+    "webpack-dev-server": "^1.9.0"
+  },
   "scripts": {
+    "start": "webpack-dev-server --hot --inline --colors",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
