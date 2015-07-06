@@ -9,7 +9,8 @@
     "node-libs-browser": "^0.5.2",
     "react": "^0.13.3",
     "reactify": "^1.1.1",
-    "watchify": "^3.2.2"
+    "watchify": "^3.2.2",
+    "promise": "~7.0.3"
   },
   "devDependencies": {
     "style-loader": "^0.12.3",

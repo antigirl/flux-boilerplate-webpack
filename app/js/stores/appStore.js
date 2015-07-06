@@ -44,6 +44,10 @@ var appStore = assign(EventEmitter.prototype, {
       case constants.REMOVE_ITEM:
       removeItem(payload.item);
       break;
+
+      case constants.API_CALL:
+      addItem('ITEM FROM API');
+      break;
     }
 
     appStore.emitChange();

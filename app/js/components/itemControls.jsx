@@ -10,6 +10,9 @@ var itemControls = React.createClass({
     var item = this.refs.item.getDOMNode().value;
     appActions.removeItem(item);
   },
+  componentDidMount: function() {
+    appActions.makeAPIcall();
+  },
   render: function() {
     return (
       <div>
