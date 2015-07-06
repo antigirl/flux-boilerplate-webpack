@@ -5,7 +5,6 @@
 npm start (http://localhost:8080)<br/>
 npm run build
 
-
 #Components / View
 Add actions via their event handlers,
 ```
