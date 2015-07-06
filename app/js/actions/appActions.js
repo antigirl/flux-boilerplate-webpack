@@ -1,16 +1,17 @@
 var appDispatcher = require('../dispatcher/appDispatcher');
+var constants = require('../constants/appConstants');
 
 module.exports = {
   addItem: function(item) {
     appDispatcher.dispatch({
-      type: 'add-item',
+      type: constants.ADD_ITEM,
       item: item
     });
   },
 
   removeItem: function(item) {
     appDispatcher.dispatch({
-      type: 'remove-item',
+      type: constants.REMOVE_ITEM,
       item: item
     });
   }

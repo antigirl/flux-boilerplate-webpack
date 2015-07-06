@@ -1,5 +1,6 @@
 var appDispatcher = require('../dispatcher/appDispatcher');
 var appActions = require('../actions/appActions');
+var constants = require('../constants/appConstants');
 var assign = require('react/lib/Object.assign');
 var EventEmitter = require('events').EventEmitter;
 var CHANGE_EVENT = 'change';
@@ -13,7 +14,7 @@ function addItem(item) {
 function removeItem(item) {
   var index = items.indexOf(item);
   if(index !== -1) {
-    items.splice(index, 1);  
+    items.splice(index, 1);
   }
 }
 
@@ -36,11 +37,11 @@ var appStore = assign(EventEmitter.prototype, {
 
   dispatcherIndex: appDispatcher.register(function (payload) {
     switch(payload.type) {
-      case 'add-item':
+      case constants.ADD_ITEM:
       addItem(payload.item);
       break;
 
-      case 'remove-item':
+      case constants.REMOVE_ITEM:
       removeItem(payload.item);
       break;
     }
