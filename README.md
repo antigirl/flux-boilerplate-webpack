@@ -26,6 +26,16 @@ var appDispatcher = require('../dispatcher/appDispatcher');
   });
 }
 ```
+Any API calls are made within the Actions
+```
+    makeAPIcall: function() {
+        api.externalCall().then(function() {
+            appDispatcher.dispatch({
+                type: 'api-call'
+            });
+        });
+    }
+```
 
 #Dispatcher
 Just an instance of a ronery dispatcher 
